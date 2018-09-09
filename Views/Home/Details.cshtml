@@ -1,0 +1,19 @@
+@model Events
+<h1>Details for @Model.Title</h1>
+<a href="/dashboard">Home</a>
+
+<a href="/User/@Model.User_Id">Want more info of this User?</a>
+
+<h5>Location</h5>
+<p>@Model.City</p>
+<h5>Address</h5>
+<p>@Model.Address</p>
+<h5>Time</h5>
+<p>@Model.Time</p>
+<!-- .ToString("hh:mm tt") -->
+<h5>Description</h5>
+<p>@Model.Description</p>
+
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Log off">
+</form>

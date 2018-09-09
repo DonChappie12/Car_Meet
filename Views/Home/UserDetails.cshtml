@@ -1,0 +1,15 @@
+@model User
+<h1>Details for @Model.FirstName @Model.LastName</h1>
+<a href="/dashboard">Home</a>
+
+<h3>Details</h3>
+
+<h5>About me</h5>
+
+<h5>What I like</h5>
+
+<h5>My cars</h5>
+
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Log off">
+</form>

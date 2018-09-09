@@ -1,0 +1,50 @@
+@model User
+<h1>Welcome @Model.FirstName @Model.LastName</h1>
+
+<a href="/newevent">Create an Event</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>Event</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+    @{
+        foreach(var eve in @ViewBag.Event){
+            bool going = false;
+            <tr>
+                <td><a href="/details/@eve.Id">@eve.Title</a></td>
+                <td>@eve.Date.ToString("MM/dd/yyyy")</td>
+                <td>@eve.Time</td>
+                <td>@eve.Address</td>
+                @if(@ViewBag.Id == @eve.User_Id){
+                    <td><a href="/delete/@eve.Id">Delete</a></td>
+                }
+                else
+                {
+                    foreach(var g in @eve.Going){
+                        @if(@g.User_Id == @ViewBag.Id){
+                            going = true;
+                        }
+                    }
+                    @if(going == true){
+                        <td><a href="/notgoing/@eve.Id">I'm attending</a></td>
+                    }
+                    else{
+                        <td><a href="/going/@eve.Id">I want to attend</a></td>
+                    }
+                }
+            </tr>
+        }
+    }
+    </tbody>
+</table>
+
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Log off">
+</form>

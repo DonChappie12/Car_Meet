@@ -1,0 +1,41 @@
+<h1>Create Event</h1>
+
+@model Events
+<form asp-action="CreateEvent" asp-controller="Home" method="POST">
+    <span asp-validation-for="Title"></span>
+    <p>Title: <input asp-for="Title"></p>
+    
+    <span asp-validation-for="City"></span>
+    <p>City: <input asp-for="City"></p>
+    
+    <span asp-validation-for="Time"></span>
+    <p>Time: <input asp-for="Time"></p>
+
+    <span asp-validation-for="TimeAmt"></span>
+    <label>Amount of Time</label>
+    <select asp-for="TimeAmt">
+        <option>Select One</option>
+        <option value="Hrs">Hrs</option>
+        <option value="Days">Day(s)</option>
+    </select>
+    
+    <span asp-validation-for="Address"></span>
+    <p>Address: <input asp-for="Address"></p>
+
+    <span asp-validation-for="Date"></span>
+    <h5>@ViewBag.timetravel</h5>
+    <p>Date: <input asp-for="Date"></p>
+    
+    <span asp-validation-for="Address"></span>
+    <br>
+    <label>Description</label>
+    <br>
+    <textarea name="Description" placeholder="Write a description..." cols="30" rows="10"></textarea>
+    <br>
+    <button>Create this Event</button>
+</form>
+
+<a href="/dashboard">Home</a>
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Log off">
+</form>

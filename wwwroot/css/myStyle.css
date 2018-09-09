@@ -1,0 +1,22 @@
+img{
+    height: 380px;
+    width: 570px;
+}
+
+.intro{
+    /* height: 700px; */
+    border-right: 2px black;
+    display: inline-block;
+    margin-right: 15px 
+}
+
+.form{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+span{
+    color: red;
+}
