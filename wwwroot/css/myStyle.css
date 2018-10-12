@@ -1,22 +1,159 @@
-img{
-    height: 380px;
-    width: 570px;
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
 }
+
+body{
+    background: transparent;
+}
+
+#container{
+    padding-bottom:20px;
+    padding-left:300px;
+    padding-right:300px;
+    background:rgb(26, 26, 26);
+   
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 2px;
+    margin: 5px;
+ 
+   
+  
+}
+
 
 .intro{
     /* height: 700px; */
-    border-right: 2px black;
+    border-right: 2px solid white;
     display: inline-block;
-    margin-right: 15px 
+    
+    padding: 30px;
+    letter-spacing: 5px;
+    color:white;
+    width:900px;
+  
+   
 }
+
+.intro img{
+       box-shadow: 1px 2.5px red;
+}
+
+
 
 .form{
     display: inline-block;
-    vertical-align: top;
-    margin-left: 50px;
-    margin-top: 50px;
+    overflow: scroll;
+    border:none;
+      
+    
+   
+   
+    background:#031D44;
+    border-radius: 10px 10px 10px 10px ; 
+    
+      
+
+    margin-left:150px;
+    height:500px;
+    width:300px;
+   
+    text-align: center;
+    
+    box-shadow: 2.5px 5px red;
 }
+    .form::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .form::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    }
+
+    .form::-webkit-scrollbar-thumb {
+        background-color: #272727;
+        outline: 3px solid slategrey;
+    }
+.form input{
+    width: 75%;
+    text-align: center;
+    background: #E0E2DB;
+      border-radius: 10px 10px 10px 10px;
+    
+    
+  
+   
+
+}
+
+.form p{
+    color:white;
+    letter-spacing: 8px;
+    margin:20px;
+  
+}
+
+button{
+    height:30px;
+    width:100px;
+
+   
+}
+
+#icon{
+    height:100px;
+    width:100px;
+    padding:5px;
+    background: transparent;
+    border:0px;
+}
+
+#icon img{
+    height:80px;
+    width:80px;
+}
+
+a{
+    color:red;
+}
+a:hover{
+    color:#E0E2DB;
+}
+
 
 span{
     color: red;
+}
+
+#question{
+    height:200px;
+    width:200px;
+    background: #031D44;
+    margin-left: 250px;
+        height:200px;
+        width:300px;
+
+        text-align: center;
+
+        box-shadow: 2.5px 5px red;
+}
+
+#done{
+    height:50px;
+    width:50px;
+    background: transparent;
+    border: none;
+}
+
+#done:active{
+    background: red;
+}
+
+#done img{
+    height:50px;
+    width:50px;
 }

@@ -1,27 +1,70 @@
-﻿<div class="intro">
+﻿<link rel="stylesheet" type="text/css" href="~/css/myStyle.css?=11">
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+<script>
+    $(document).ready(function(){
+
+        $("#question").hide();
+ 
+
+        $("#icon").click(function(){
+            $("#question").toggle(5000);
+        });
+
+
+
+
+
+    })
+</script>
+
+
+<div id="container">
+<div class="intro">
     <h2>Meet different people that have the same passion as you</h2>
     <img src="http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2013/12/01124507/paul-walker-RIP-2-1200x799.jpg" alt="Old_school_car">
+    <img src="~/images/car1.jpg">
+    <img src="~/images/car2.jpg">
+    
+    <img src="~/images/car4.jpg">
+    <img src="~/images/car5.jpg">
+
+
+    
+    
 </div>
+   
+<button id="icon">
+        <img src="~/images/icon.png">
+    </button>
+
 @model ValidateUser
 <div class="form">
-    <h3>Register for FREE</h3>
+<h3 style="color:#D9BDC5;">Register for FREE</h3>
     <form asp-action="Register" asp-home="Home" method="POST">
         <span asp-validation-for="FirstName"></span>
-        <p>First Name: <input asp-for="FirstName"></p>
+        <p>First Name <input asp-for="FirstName"></p>
     
         <span asp-validation-for="LastName"></span>
-        <p>Last Name: <input asp-for="LastName"></p>
+        <p>Last Name <input asp-for="LastName"></p>
     
         <span asp-validation-for="Email"></span>
-        <p>Email: <input asp-for="Email"></p>
+        <p>Email <input asp-for="Email"></p>
     
         <span asp-validation-for="Password"></span>
-        <p>Password: <input asp-for="Password"></p>
+        <p>Password <input asp-for="Password"></p>
     
         <span asp-validation-for="ConfirmPassword"></span>
-        <p>Confirm Password: <input asp-for="ConfirmPassword"></p>
-        <button>Register Now</button>
+        <p>Confirm Password <input asp-for="ConfirmPassword"></p>
+        <button id="done">
+            <img src="~/images/done.png">
+        </button>
     </form>
     <br>
     <a href="/login">Already a member?</a>
+
 </div>
+<div id="question">
+
+</div>
+</div>
+

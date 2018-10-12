@@ -9,3 +9,14 @@
 /Users/marthagonzalez/Documents/my_projects/car_meet/obj/Debug/netcoreapp2.0/car_meet.AssemblyInfo.cs
 /Users/marthagonzalez/Documents/my_projects/car_meet/obj/Debug/netcoreapp2.0/car_meet.dll
 /Users/marthagonzalez/Documents/my_projects/car_meet/obj/Debug/netcoreapp2.0/car_meet.pdb
+C:\Users\gomez\Desktop\c #\Car_Meet\bin\Debug\netcoreapp2.0\car_meet.deps.json
+C:\Users\gomez\Desktop\c #\Car_Meet\bin\Debug\netcoreapp2.0\car_meet.runtimeconfig.json
+C:\Users\gomez\Desktop\c #\Car_Meet\bin\Debug\netcoreapp2.0\car_meet.runtimeconfig.dev.json
+C:\Users\gomez\Desktop\c #\Car_Meet\bin\Debug\netcoreapp2.0\car_meet.dll
+C:\Users\gomez\Desktop\c #\Car_Meet\bin\Debug\netcoreapp2.0\car_meet.pdb
+C:\Users\gomez\Desktop\c #\Car_Meet\obj\Debug\netcoreapp2.0\car_meet.csprojResolveAssemblyReference.cache
+C:\Users\gomez\Desktop\c #\Car_Meet\obj\Debug\netcoreapp2.0\car_meet.csproj.CoreCompileInputs.cache
+C:\Users\gomez\Desktop\c #\Car_Meet\obj\Debug\netcoreapp2.0\car_meet.AssemblyInfoInputs.cache
+C:\Users\gomez\Desktop\c #\Car_Meet\obj\Debug\netcoreapp2.0\car_meet.AssemblyInfo.cs
+C:\Users\gomez\Desktop\c #\Car_Meet\obj\Debug\netcoreapp2.0\car_meet.dll
+C:\Users\gomez\Desktop\c #\Car_Meet\obj\Debug\netcoreapp2.0\car_meet.pdb
