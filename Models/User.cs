@@ -18,6 +18,10 @@ namespace car_meet.Models
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
+        public string AboutMe { get; set; }
+        public string WhatILike { get; set; }
+        public string MyCars { get; set; }
+
         public List<Events> Event { get; set; }
 
         public List<Going> Going { get; set; }

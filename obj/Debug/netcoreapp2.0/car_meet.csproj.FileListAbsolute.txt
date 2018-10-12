@@ -3,7 +3,6 @@
 /Users/marthagonzalez/Documents/my_projects/car_meet/bin/Debug/netcoreapp2.0/car_meet.runtimeconfig.dev.json
 /Users/marthagonzalez/Documents/my_projects/car_meet/bin/Debug/netcoreapp2.0/car_meet.dll
 /Users/marthagonzalez/Documents/my_projects/car_meet/bin/Debug/netcoreapp2.0/car_meet.pdb
-/Users/marthagonzalez/Documents/my_projects/car_meet/obj/Debug/netcoreapp2.0/car_meet.csprojResolveAssemblyReference.cache
 /Users/marthagonzalez/Documents/my_projects/car_meet/obj/Debug/netcoreapp2.0/car_meet.csproj.CoreCompileInputs.cache
 /Users/marthagonzalez/Documents/my_projects/car_meet/obj/Debug/netcoreapp2.0/car_meet.AssemblyInfoInputs.cache
 /Users/marthagonzalez/Documents/my_projects/car_meet/obj/Debug/netcoreapp2.0/car_meet.AssemblyInfo.cs

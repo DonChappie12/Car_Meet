@@ -1,0 +1,17 @@
+@model User
+<h1>My User stuff display</h1>
+<a href="/dashboard">Home</a>
+
+<a href="/EditUser/@Model.UserId">Edit my profile</a>
+
+<!-- <div class="pic-container pic-medium pic-circle">
+    <img class="pic" src="" alt="">
+    <div class="pic-overlay">
+        <a><i class="fa fa-window-close-o" aria-hidden="true"></i></a>
+        <a><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+    </div>
+</div> -->
+
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Log off">
+</form>

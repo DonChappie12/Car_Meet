@@ -92,10 +92,25 @@ namespace car_meet.Controllers
         [Route("newevent")]
         public IActionResult NewEvent()
         {
-           User currUser = _context.User.SingleOrDefault(c => c.UserId == HttpContext.Session.GetInt32("user_id"));
+            User currUser = _context.User.SingleOrDefault(c => c.UserId == HttpContext.Session.GetInt32("user_id"));
             if (currUser!=null)
             {
                 return View();
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
+        }
+
+        [Route("MyProfile/{Id}")]
+        public IActionResult MyProfile(int Id)
+        {
+            User currUser = _context.User.SingleOrDefault(c => c.UserId == HttpContext.Session.GetInt32("user_id"));
+            if (currUser!=null)
+            {
+                User thisUser = _context.User.SingleOrDefault(x => x.UserId == Id);
+                return View(thisUser);
             }
             else
             {
@@ -227,6 +242,33 @@ namespace car_meet.Controllers
             {
                 return RedirectToAction("Index");
             }
+        }
+
+        [Route("EditUser/{Id}")]
+
+        public IActionResult EditUser(int Id)
+        {
+            User currUser = _context.User.SingleOrDefault(c =>c.UserId == HttpContext.Session.GetInt32("user_id"));
+            if(currUser!=null)
+            {
+                User thisUser = _context.User.SingleOrDefault(x => x.UserId == Id);
+                return View(thisUser);
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
+        }
+
+        [Route("Update/{Id}")]
+        public IActionResult Update(int Id)
+        {
+            User currUser = _context.User.SingleOrDefault(c =>c.UserId == HttpContext.Session.GetInt32("user_id"));
+            if(currUser!=null)
+            {
+                return RedirectToAction("MyProfile/{Id}");
+            }
+            return Redirect("/");
         }
 
         [HttpPost("logout")]
