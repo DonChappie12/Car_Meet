@@ -1,5 +1,21 @@
+@model User
 <h1>Details to edit goes here</h1>
 <a href="/dashboard">Home</a>
+
+<form asp-action="Update" asp-controller="Home" method="POST">
+    <p>First Name: <input type="text" value="@Model.FirstName"></p>
+    <p>Last Name: <input type="text" value="@Model.LastName"></p>
+    <p>Email: <input type="text" value="@Model.Email"></p>
+    <label>About Me(Optional)</label>
+    <br>
+    <textarea name="AboutMe" placeholder="Tell us about yourself" value="@Model.AboutMe" cols="30" rows="10"></textarea>
+    <br>
+    <label>What I Like</label>
+    <br>
+    <textarea name="AboutMe" placeholder="What do you like?..." value="@Model.WhatILike" cols="30" rows="10"></textarea>
+    <br>
+    <button>Update</button>
+</form>
 
 <form asp-action="Logout" asp-controller="Home" method="POST">
     <input type="submit" value="Log off">
