@@ -25,7 +25,7 @@ namespace car_meet.Models
         public string TimeAmt { get; set; }
 
         [Required(ErrorMessage="An Event must have an address for car meeters")]
-        public string Address { get; set; }
+        public string Adress { get; set; }
 
         [Required(ErrorMessage="An Event must have a Date")]
         [DataType(DataType.Date)]

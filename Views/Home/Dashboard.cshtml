@@ -1,9 +1,21 @@
-@model User
-<h1>Welcome @Model.FirstName @Model.LastName</h1>
+<link rel="stylesheet" type="text/css" href="~/css/dashboard.css">
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 
-<a href="/newevent">Create an Event</a>
 
-<table>
+
+<div id="container">
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Log off">
+</form>
+
+    @model User
+    
+<h1>Welcome <span>@Model.FirstName @Model.LastName</span></h1>
+
+
+
+<div class="form">
+<table id="info">
     <thead>
         <tr>
             <th>Event</th>
@@ -21,7 +33,7 @@
                 <td><a href="/details/@eve.Id">@eve.Title</a></td>
                 <td>@eve.Date.ToString("MM/dd/yyyy")</td>
                 <td>@eve.Time</td>
-                <td>@eve.Address</td>
+                <td>@eve.Adress</td>
                 @if(@ViewBag.Id == @eve.User_Id){
                     <td><a href="/delete/@eve.Id">Delete</a></td>
                 }
@@ -44,7 +56,16 @@
     }
     </tbody>
 </table>
+<button id="done">
+    <a href="/newevent">
+        <p> Create An Event</p>
 
-<form asp-action="Logout" asp-controller="Home" method="POST">
-    <input type="submit" value="Log off">
-</form>
+        <img src="~/images/event.png">
+    </a>
+
+</button>
+</div>
+
+
+
+</div>

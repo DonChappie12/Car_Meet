@@ -7,6 +7,7 @@ namespace car_meet.Models
 {
     public class User
     {
+        
         public int UserId { get; set; }
 
         public string FirstName { get; set; }

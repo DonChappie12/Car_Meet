@@ -1,4 +1,10 @@
-@model Events
+<link rel="stylesheet" type="text/css" href="~/css/details.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<div id="container">
+<div class="form">
+    @model Events
 <h1>Details for @Model.Title</h1>
 <a href="/dashboard">Home</a>
 
@@ -7,7 +13,7 @@
 <h5>Location</h5>
 <p>@Model.City</p>
 <h5>Address</h5>
-<p>@Model.Address</p>
+<p>@Model.Adress</p>
 <h5>Time</h5>
 <p>@Model.Time</p>
 <!-- .ToString("hh:mm tt") -->
@@ -17,3 +23,5 @@
 <form asp-action="Logout" asp-controller="Home" method="POST">
     <input type="submit" value="Log off">
 </form>
+</div>
+</div>

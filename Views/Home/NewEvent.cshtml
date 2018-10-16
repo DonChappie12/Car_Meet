@@ -1,5 +1,17 @@
-<h1>Create Event</h1>
+<link rel="stylesheet" type="text/css" href="~/css/newevent.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
+
+
+
+<div id="container">
+<h1>Create Event</h1>
+<a href="/dashboard">Home</a>
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Log off">
+</form>
+<div class="form">
 @model Events
 <form asp-action="CreateEvent" asp-controller="Home" method="POST">
     <span asp-validation-for="Title"></span>
@@ -19,23 +31,25 @@
         <option value="Days">Day(s)</option>
     </select>
     
-    <span asp-validation-for="Address"></span>
-    <p>Address: <input asp-for="Address"></p>
+    <span asp-validation-for="Adress"></span>
+    <p>Address: <input asp-for="Adress"></p>
 
     <span asp-validation-for="Date"></span>
     <h5>@ViewBag.timetravel</h5>
     <p>Date: <input asp-for="Date"></p>
     
-    <span asp-validation-for="Address"></span>
+    <span asp-validation-for="Adress"></span>
     <br>
     <label>Description</label>
     <br>
     <textarea name="Description" placeholder="Write a description..." cols="30" rows="10"></textarea>
     <br>
-    <button>Create this Event</button>
+<button id="done">
+    <img src="~/images/done.png">
+</button>
 </form>
 
-<a href="/dashboard">Home</a>
-<form asp-action="Logout" asp-controller="Home" method="POST">
-    <input type="submit" value="Log off">
-</form>
+
+</div>
+
+</div>
