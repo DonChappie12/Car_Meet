@@ -135,7 +135,7 @@ namespace car_meet.Controllers
                             Time = Events.Time,
                             TimeAmt = Events.TimeAmt,
                             Description = Events.Description,
-                            Adress = Events.Adress,
+                            Address = Events.Address,
                             Date = Events.Date,
                             User_Id = currUser.UserId
                         };

@@ -12782,23 +12782,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gomez\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/marthagonzalez/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gomez\\Desktop\\c #\\Car_Meet\\car_meet.csproj",
+      "projectUniqueName": "/Users/marthagonzalez/Documents/my_projects/car_meet/car_meet.csproj",
       "projectName": "car_meet",
-      "projectPath": "C:\\Users\\gomez\\Desktop\\c #\\Car_Meet\\car_meet.csproj",
-      "packagesPath": "C:\\Users\\gomez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gomez\\Desktop\\c #\\Car_Meet\\obj\\",
+      "projectPath": "/Users/marthagonzalez/Documents/my_projects/car_meet/car_meet.csproj",
+      "packagesPath": "/Users/marthagonzalez/.nuget/packages/",
+      "outputPath": "/Users/marthagonzalez/Documents/my_projects/car_meet/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\gomez\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/marthagonzalez/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
